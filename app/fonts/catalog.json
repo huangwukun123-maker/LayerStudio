@@ -1,0 +1,189 @@
+[
+  {
+    "key": "LayerStudioSansSC-Regular",
+    "file": "LayerStudioSansSC-Regular.ttf",
+    "psd_name": "LayerStudioSansSC-Regular",
+    "label": "思源黑体 Regular",
+    "bundled": true
+  },
+  {
+    "key": "LayerStudioSansSC-Bold",
+    "file": "LayerStudioSansSC-Bold.ttf",
+    "psd_name": "LayerStudioSansSC-Bold",
+    "label": "思源黑体 Bold",
+    "bundled": true
+  },
+  {
+    "key": "LayerStudioSansSC-Black",
+    "file": "LayerStudioSansSC-Black.ttf",
+    "psd_name": "LayerStudioSansSC-Black",
+    "label": "思源黑体 Black",
+    "bundled": true
+  },
+  {
+    "key": "LayerStudioSerifSC-Regular",
+    "file": "LayerStudioSerifSC-Regular.ttf",
+    "psd_name": "LayerStudioSerifSC-Regular",
+    "label": "思源宋体 Regular",
+    "bundled": true
+  },
+  {
+    "key": "LayerStudioSerifSC-Bold",
+    "file": "LayerStudioSerifSC-Bold.ttf",
+    "psd_name": "LayerStudioSerifSC-Bold",
+    "label": "思源宋体 Bold",
+    "bundled": true
+  },
+  {
+    "key": "yahei",
+    "file": "msyh.ttc",
+    "psd_name": "MicrosoftYaHei",
+    "label": "微软雅黑",
+    "bundled": false
+  },
+  {
+    "key": "yahei-bold",
+    "file": "msyhbd.ttc",
+    "psd_name": "MicrosoftYaHei-Bold",
+    "label": "微软雅黑粗体",
+    "bundled": false
+  },
+  {
+    "key": "heiti",
+    "file": "simhei.ttf",
+    "psd_name": "SimHei",
+    "label": "黑体",
+    "bundled": false
+  },
+  {
+    "key": "songti",
+    "file": "simsun.ttc",
+    "psd_name": "SimSun",
+    "label": "宋体",
+    "bundled": false
+  },
+  {
+    "key": "kaiti",
+    "file": "simkai.ttf",
+    "psd_name": "KaiTi",
+    "label": "楷体",
+    "bundled": false
+  },
+  {
+    "key": "deng",
+    "file": "Deng.ttf",
+    "psd_name": "DengXian",
+    "label": "等线",
+    "bundled": false
+  },
+  {
+    "key": "deng-bold",
+    "file": "Dengb.ttf",
+    "psd_name": "DengXian-Bold",
+    "label": "等线粗体",
+    "bundled": false
+  },
+  {
+    "key": "zhongsong",
+    "file": "STZHONGS.TTF",
+    "psd_name": "STZhongsong",
+    "label": "华文中宋",
+    "bundled": false
+  },
+  {
+    "key": "arial",
+    "file": "arial.ttf",
+    "psd_name": "ArialMT",
+    "label": "Arial",
+    "bundled": false,
+    "latin_only": true
+  },
+  {
+    "key": "arial-bold",
+    "file": "arialbd.ttf",
+    "psd_name": "Arial-BoldMT",
+    "label": "Arial Bold",
+    "bundled": false,
+    "latin_only": true
+  },
+  {
+    "key": "arial-italic",
+    "file": "ariali.ttf",
+    "psd_name": "Arial-ItalicMT",
+    "label": "Arial Italic",
+    "bundled": false,
+    "latin_only": true
+  },
+  {
+    "key": "arial-bold-italic",
+    "file": "arialbi.ttf",
+    "psd_name": "Arial-BoldItalicMT",
+    "label": "Arial Bold Italic",
+    "bundled": false,
+    "latin_only": true
+  },
+  {
+    "key": "arial-black",
+    "file": "ariblk.ttf",
+    "psd_name": "Arial-Black",
+    "label": "Arial Black",
+    "bundled": false,
+    "latin_only": true
+  },
+  {
+    "key": "times",
+    "file": "times.ttf",
+    "psd_name": "TimesNewRomanPSMT",
+    "label": "Times New Roman",
+    "bundled": false,
+    "latin_only": true
+  },
+  {
+    "key": "times-bold",
+    "file": "timesbd.ttf",
+    "psd_name": "TimesNewRomanPS-BoldMT",
+    "label": "Times New Roman Bold",
+    "bundled": false,
+    "latin_only": true
+  },
+  {
+    "key": "times-italic",
+    "file": "timesi.ttf",
+    "psd_name": "TimesNewRomanPS-ItalicMT",
+    "label": "Times New Roman Italic",
+    "bundled": false,
+    "latin_only": true
+  },
+  {
+    "key": "calibri",
+    "file": "calibri.ttf",
+    "psd_name": "Calibri",
+    "label": "Calibri",
+    "bundled": false,
+    "latin_only": true
+  },
+  {
+    "key": "calibri-bold",
+    "file": "calibrib.ttf",
+    "psd_name": "Calibri-Bold",
+    "label": "Calibri Bold",
+    "bundled": false,
+    "latin_only": true
+  },
+  {
+    "key": "calibri-italic",
+    "file": "calibrii.ttf",
+    "psd_name": "Calibri-Italic",
+    "label": "Calibri Italic",
+    "bundled": false,
+    "latin_only": true
+  },
+  {
+    "key": "impact",
+    "file": "impact.ttf",
+    "psd_name": "Impact",
+    "label": "Impact",
+    "bundled": false,
+    "latin_only": true
+  }
+]

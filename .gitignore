@@ -1,0 +1,38 @@
+# Local environments and downloaded dependencies
+.venv/
+venv/
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+build/
+dist/
+*.egg-info/
+
+# Runtime images, results and credentials must stay private
+data/
+app/data/
+app/models/
+app/runtime/
+.env
+.env.*
+!.env.example
+service.config
+*credential*.json
+*activation*.json
+*.pem
+*.key
+*.pfx
+*.log
+*.psd
+*.zip
+*.onnx
+*.bin
+*.exe
+*.dll
+
+# Local editors
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

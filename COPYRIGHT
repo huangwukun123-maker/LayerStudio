@@ -1,0 +1,9 @@
+Copyright (C) 2026 分层工坊 contributors.
+
+Original LayerStudio application source, tests and documentation in this
+repository are licensed under GPL-3.0-only. See LICENSE for the full terms.
+
+Files in third_party/ and app/fonts/ retain their respective upstream licenses
+and copyright notices. External dependencies and model weights are not
+relicensed under the application's GPL. This repository does not claim rights
+over third-party brand names, artwork, or user-supplied images.

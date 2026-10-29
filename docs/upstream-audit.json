@@ -1,0 +1,749 @@
+{
+  "checked_at": "2026-10-21T13:41:50.258159+00:00",
+  "repositories": [
+    {
+      "repository": "RapidAI/RapidOCR",
+      "url": "https://github.com/RapidAI/RapidOCR",
+      "stargazers_count": 8247,
+      "forks_count": 754,
+      "pushed_at": "2026-10-21T02:33:38Z",
+      "updated_at": "2026-10-21T13:41:25Z",
+      "open_issues_count": 26,
+      "archived": false,
+      "default_branch": "main",
+      "license": "Apache-2.0",
+      "sample_human_contributors": 29,
+      "sample_bot_contributors": 1,
+      "contributors_sample_size": 30,
+      "issues": [
+        {
+          "number": 761,
+          "title": "fix(python): preserve resize ratios across both size limits",
+          "state": "open",
+          "updated_at": "2026-10-18T15:52:54Z",
+          "html_url": "https://github.com/RapidAI/RapidOCR/pull/761"
+        },
+        {
+          "number": 759,
+          "title": "Bug: image resize ratios are wrong when both size limits apply",
+          "state": "open",
+          "updated_at": "2026-10-18T13:13:56Z",
+          "html_url": "https://github.com/RapidAI/RapidOCR/issues/759"
+        },
+        {
+          "number": 757,
+          "title": "perf(torch): reduce rec logits on device before copying them to the CPU",
+          "state": "open",
+          "updated_at": "2026-10-12T04:46:58Z",
+          "html_url": "https://github.com/RapidAI/RapidOCR/pull/757"
+        }
+      ],
+      "pull_requests": [
+        {
+          "number": 761,
+          "title": "fix(python): preserve resize ratios across both size limits",
+          "state": "open",
+          "updated_at": "2026-10-18T15:52:54Z",
+          "html_url": "https://github.com/RapidAI/RapidOCR/pull/761"
+        },
+        {
+          "number": 757,
+          "title": "perf(torch): reduce rec logits on device before copying them to the CPU",
+          "state": "open",
+          "updated_at": "2026-10-12T04:46:58Z",
+          "html_url": "https://github.com/RapidAI/RapidOCR/pull/757"
+        },
+        {
+          "number": 756,
+          "title": "perf(det): keep DetPreProcess mean/std in float32",
+          "state": "open",
+          "updated_at": "2026-10-12T00:13:30Z",
+          "html_url": "https://github.com/RapidAI/RapidOCR/pull/756"
+        }
+      ],
+      "last_commit_date": "2026-10-20T14:06:30Z"
+    },
+    {
+      "repository": "PaddlePaddle/PaddleOCR",
+      "url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "stargazers_count": 91469,
+      "forks_count": 11536,
+      "pushed_at": "2026-09-16T03:31:50Z",
+      "updated_at": "2026-10-21T13:13:51Z",
+      "open_issues_count": 251,
+      "archived": false,
+      "default_branch": "main",
+      "license": "Apache-2.0",
+      "sample_human_contributors": 30,
+      "sample_bot_contributors": 0,
+      "contributors_sample_size": 30,
+      "issues": [
+        {
+          "number": 18403,
+          "title": "PP-OCRv6 rec: dictionary lacks German characters „ (U+201E), ‚ (U+201A) and ẞ (U+1E9E) — is this intended?",
+          "state": "open",
+          "updated_at": "2026-10-21T13:09:38Z",
+          "html_url": "https://github.com/PaddlePaddle/PaddleOCR/issues/18403"
+        },
+        {
+          "number": 18402,
+          "title": "图章文字识别不完整",
+          "state": "open",
+          "updated_at": "2026-10-19T09:25:54Z",
+          "html_url": "https://github.com/PaddlePaddle/PaddleOCR/issues/18402"
+        },
+        {
+          "number": 18401,
+          "title": "fix(paddleocr_vl): allow empty markdown_ignore_labels",
+          "state": "open",
+          "updated_at": "2026-10-19T18:05:23Z",
+          "html_url": "https://github.com/PaddlePaddle/PaddleOCR/pull/18401"
+        }
+      ],
+      "pull_requests": [
+        {
+          "number": 18401,
+          "title": "fix(paddleocr_vl): allow empty markdown_ignore_labels",
+          "state": "open",
+          "updated_at": "2026-10-19T18:05:23Z",
+          "html_url": "https://github.com/PaddlePaddle/PaddleOCR/pull/18401"
+        },
+        {
+          "number": 18399,
+          "title": "fix(doc2md): read PPTX strikethrough from a:rPr, not Font.strike",
+          "state": "open",
+          "updated_at": "2026-10-18T18:05:21Z",
+          "html_url": "https://github.com/PaddlePaddle/PaddleOCR/pull/18399"
+        },
+        {
+          "number": 18398,
+          "title": "docs: add InvoiceFlowAI RapidOCR integration to community projects",
+          "state": "open",
+          "updated_at": "2026-10-18T18:05:23Z",
+          "html_url": "https://github.com/PaddlePaddle/PaddleOCR/pull/18398"
+        }
+      ],
+      "last_commit_date": "2026-09-16T03:30:53Z"
+    },
+    {
+      "repository": "microsoft/onnxruntime",
+      "url": "https://github.com/microsoft/onnxruntime",
+      "stargazers_count": 22129,
+      "forks_count": 4346,
+      "pushed_at": "2026-10-21T13:28:06Z",
+      "updated_at": "2026-10-21T11:27:35Z",
+      "open_issues_count": 1820,
+      "archived": false,
+      "default_branch": "main",
+      "license": "MIT",
+      "sample_human_contributors": 28,
+      "sample_bot_contributors": 2,
+      "contributors_sample_size": 30,
+      "issues": [
+        {
+          "number": 33515,
+          "title": "Dev/erscor/2026/10/21 1311 patch",
+          "state": "open",
+          "updated_at": "2026-10-21T13:28:09Z",
+          "html_url": "https://github.com/microsoft/onnxruntime/pull/33515"
+        },
+        {
+          "number": 33514,
+          "title": "[CUDA] Fix fp16 overflow in ReduceMean and ReduceLogSum",
+          "state": "open",
+          "updated_at": "2026-10-21T12:58:48Z",
+          "html_url": "https://github.com/microsoft/onnxruntime/pull/33514"
+        },
+        {
+          "number": 33513,
+          "title": "Respect Pad axes in symbolic shape inference",
+          "state": "open",
+          "updated_at": "2026-10-21T11:48:03Z",
+          "html_url": "https://github.com/microsoft/onnxruntime/pull/33513"
+        }
+      ],
+      "pull_requests": [
+        {
+          "number": 33515,
+          "title": "Dev/erscor/2026/10/21 1311 patch",
+          "state": "open",
+          "updated_at": "2026-10-21T13:28:09Z",
+          "html_url": "https://github.com/microsoft/onnxruntime/pull/33515"
+        },
+        {
+          "number": 33514,
+          "title": "[CUDA] Fix fp16 overflow in ReduceMean and ReduceLogSum",
+          "state": "open",
+          "updated_at": "2026-10-21T12:58:48Z",
+          "html_url": "https://github.com/microsoft/onnxruntime/pull/33514"
+        },
+        {
+          "number": 33513,
+          "title": "Respect Pad axes in symbolic shape inference",
+          "state": "open",
+          "updated_at": "2026-10-21T11:48:03Z",
+          "html_url": "https://github.com/microsoft/onnxruntime/pull/33513"
+        }
+      ],
+      "last_commit_date": "2026-10-21T08:45:56Z"
+    },
+    {
+      "repository": "xuebinqin/U-2-Net",
+      "url": "https://github.com/xuebinqin/U-2-Net",
+      "stargazers_count": 9883,
+      "forks_count": 1615,
+      "pushed_at": "2024-06-26T04:16:45Z",
+      "updated_at": "2026-10-20T11:33:28Z",
+      "open_issues_count": 250,
+      "archived": false,
+      "default_branch": "master",
+      "license": "Apache-2.0",
+      "sample_human_contributors": 10,
+      "sample_bot_contributors": 1,
+      "contributors_sample_size": 11,
+      "issues": [
+        {
+          "number": 409,
+          "title": "License confirmation: commercial SaaS use and browser-side redistribution of u2netp.pth",
+          "state": "open",
+          "updated_at": "2026-10-18T05:41:22Z",
+          "html_url": "https://github.com/xuebinqin/U-2-Net/issues/409"
+        },
+        {
+          "number": 408,
+          "title": "แนะนำ 10 เว็บ สล็อตเว็บตรง เว็บแท้ สล็อต pg เว็บตรง แตกหนัก RTP สูงสุด 98% รับวอเลท",
+          "state": "open",
+          "updated_at": "2026-09-09T04:53:50Z",
+          "html_url": "https://github.com/xuebinqin/U-2-Net/issues/408"
+        },
+        {
+          "number": 407,
+          "title": "Fix a small issue in U-2-Net (#392)",
+          "state": "closed",
+          "updated_at": "2026-07-13T12:52:51Z",
+          "html_url": "https://github.com/xuebinqin/U-2-Net/pull/407"
+        }
+      ],
+      "pull_requests": [
+        {
+          "number": 407,
+          "title": "Fix a small issue in U-2-Net (#392)",
+          "state": "closed",
+          "updated_at": "2026-07-13T12:52:51Z",
+          "html_url": "https://github.com/xuebinqin/U-2-Net/pull/407"
+        },
+        {
+          "number": 404,
+          "title": "Update requirements.txt",
+          "state": "open",
+          "updated_at": "2025-08-05T05:49:03Z",
+          "html_url": "https://github.com/xuebinqin/U-2-Net/pull/404"
+        },
+        {
+          "number": 402,
+          "title": "Update README.md",
+          "state": "open",
+          "updated_at": "2025-06-09T02:32:20Z",
+          "html_url": "https://github.com/xuebinqin/U-2-Net/pull/402"
+        }
+      ],
+      "last_commit_date": "2024-01-13T04:57:35Z"
+    },
+    {
+      "repository": "danielgatis/rembg",
+      "url": "https://github.com/danielgatis/rembg",
+      "stargazers_count": 25145,
+      "forks_count": 2444,
+      "pushed_at": "2026-10-10T17:17:22Z",
+      "updated_at": "2026-10-21T13:40:32Z",
+      "open_issues_count": 3,
+      "archived": false,
+      "default_branch": "main",
+      "license": "MIT",
+      "sample_human_contributors": 30,
+      "sample_bot_contributors": 0,
+      "contributors_sample_size": 30,
+      "issues": [
+        {
+          "number": 860,
+          "title": "build: allow Pillow 13",
+          "state": "open",
+          "updated_at": "2026-10-21T11:33:30Z",
+          "html_url": "https://github.com/danielgatis/rembg/pull/860"
+        },
+        {
+          "number": 859,
+          "title": "fix: convert non-RGB images before uploading in remote sessions",
+          "state": "open",
+          "updated_at": "2026-10-12T03:21:11Z",
+          "html_url": "https://github.com/danielgatis/rembg/pull/859"
+        },
+        {
+          "number": 858,
+          "title": "feat: add birefnet-general-fp16 session (~27-30% faster on CUDA)",
+          "state": "open",
+          "updated_at": "2026-10-10T15:09:05Z",
+          "html_url": "https://github.com/danielgatis/rembg/pull/858"
+        }
+      ],
+      "pull_requests": [
+        {
+          "number": 860,
+          "title": "build: allow Pillow 13",
+          "state": "open",
+          "updated_at": "2026-10-21T11:33:30Z",
+          "html_url": "https://github.com/danielgatis/rembg/pull/860"
+        },
+        {
+          "number": 859,
+          "title": "fix: convert non-RGB images before uploading in remote sessions",
+          "state": "open",
+          "updated_at": "2026-10-12T03:21:11Z",
+          "html_url": "https://github.com/danielgatis/rembg/pull/859"
+        },
+        {
+          "number": 858,
+          "title": "feat: add birefnet-general-fp16 session (~27-30% faster on CUDA)",
+          "state": "open",
+          "updated_at": "2026-10-10T15:09:05Z",
+          "html_url": "https://github.com/danielgatis/rembg/pull/858"
+        }
+      ],
+      "last_commit_date": "2026-10-10T17:17:20Z"
+    },
+    {
+      "repository": "advimman/lama",
+      "url": "https://github.com/advimman/lama",
+      "stargazers_count": 10331,
+      "forks_count": 1085,
+      "pushed_at": "2025-02-05T08:41:52Z",
+      "updated_at": "2026-10-21T11:24:33Z",
+      "open_issues_count": 127,
+      "archived": false,
+      "default_branch": "main",
+      "license": "Apache-2.0",
+      "sample_human_contributors": 13,
+      "sample_bot_contributors": 0,
+      "contributors_sample_size": 13,
+      "issues": [
+        {
+          "number": 369,
+          "title": "模型权重不正确",
+          "state": "open",
+          "updated_at": "2026-09-21T08:36:17Z",
+          "html_url": "https://github.com/advimman/lama/issues/369"
+        },
+        {
+          "number": 368,
+          "title": "Licence for the pretrained big-lama weights (LICENSE-MODELS.md is referenced but missing)",
+          "state": "open",
+          "updated_at": "2026-09-08T09:03:34Z",
+          "html_url": "https://github.com/advimman/lama/issues/368"
+        },
+        {
+          "number": 367,
+          "title": "Licence for the pretrained big-lama weights (LICENSE-MODELS.md is referenced but missing)",
+          "state": "closed",
+          "updated_at": "2026-09-08T09:02:06Z",
+          "html_url": "https://github.com/advimman/lama/issues/367"
+        }
+      ],
+      "pull_requests": [
+        {
+          "number": 363,
+          "title": "Fix a small issue in lama (#359)",
+          "state": "closed",
+          "updated_at": "2026-07-12T19:52:18Z",
+          "html_url": "https://github.com/advimman/lama/pull/363"
+        },
+        {
+          "number": 362,
+          "title": "Fix typo in lama (#359)",
+          "state": "closed",
+          "updated_at": "2026-07-12T19:51:20Z",
+          "html_url": "https://github.com/advimman/lama/pull/362"
+        },
+        {
+          "number": 354,
+          "title": "Create MAGT: Mask-Aware Generative Transformer for Image Inpainting",
+          "state": "closed",
+          "updated_at": "2025-07-14T18:08:16Z",
+          "html_url": "https://github.com/advimman/lama/pull/354"
+        }
+      ],
+      "last_commit_date": "2025-02-05T08:41:50Z"
+    },
+    {
+      "repository": "opencv/opencv_zoo",
+      "url": "https://github.com/opencv/opencv_zoo",
+      "stargazers_count": 1097,
+      "forks_count": 313,
+      "pushed_at": "2026-10-20T15:55:38Z",
+      "updated_at": "2026-10-20T22:39:24Z",
+      "open_issues_count": 32,
+      "archived": false,
+      "default_branch": "main",
+      "license": "Apache-2.0",
+      "sample_human_contributors": 30,
+      "sample_bot_contributors": 0,
+      "contributors_sample_size": 30,
+      "issues": [
+        {
+          "number": 319,
+          "title": "Feat: Add C++ demo for MediaPipe Hand Pose Estimation (part of #135)",
+          "state": "open",
+          "updated_at": "2026-10-10T06:58:11Z",
+          "html_url": "https://github.com/opencv/opencv_zoo/pull/319"
+        },
+        {
+          "number": 318,
+          "title": "Commercial use of face_recognition_sface_2021dec_int8.onnx — training data & upstream authorization",
+          "state": "open",
+          "updated_at": "2026-10-14T07:54:04Z",
+          "html_url": "https://github.com/opencv/opencv_zoo/issues/318"
+        },
+        {
+          "number": 317,
+          "title": "Add LPD-YuNet evaluation script on CCPD",
+          "state": "open",
+          "updated_at": "2026-08-28T15:02:58Z",
+          "html_url": "https://github.com/opencv/opencv_zoo/pull/317"
+        }
+      ],
+      "pull_requests": [
+        {
+          "number": 319,
+          "title": "Feat: Add C++ demo for MediaPipe Hand Pose Estimation (part of #135)",
+          "state": "open",
+          "updated_at": "2026-10-10T06:58:11Z",
+          "html_url": "https://github.com/opencv/opencv_zoo/pull/319"
+        },
+        {
+          "number": 317,
+          "title": "Add LPD-YuNet evaluation script on CCPD",
+          "state": "open",
+          "updated_at": "2026-08-28T15:02:58Z",
+          "html_url": "https://github.com/opencv/opencv_zoo/pull/317"
+        },
+        {
+          "number": 315,
+          "title": "fix: correct typo 'Resutls' to 'Results' in 6 demo files",
+          "state": "closed",
+          "updated_at": "2026-10-20T15:56:03Z",
+          "html_url": "https://github.com/opencv/opencv_zoo/pull/315"
+        }
+      ],
+      "last_commit_date": "2026-10-20T15:55:38Z"
+    },
+    {
+      "repository": "xinntao/Real-ESRGAN",
+      "url": "https://github.com/xinntao/Real-ESRGAN",
+      "stargazers_count": 37166,
+      "forks_count": 4492,
+      "pushed_at": "2024-08-06T13:15:18Z",
+      "updated_at": "2026-10-21T13:00:53Z",
+      "open_issues_count": 649,
+      "archived": false,
+      "default_branch": "master",
+      "license": "BSD-3-Clause",
+      "sample_human_contributors": 11,
+      "sample_bot_contributors": 0,
+      "contributors_sample_size": 11,
+      "issues": [
+        {
+          "number": 1017,
+          "title": "Add Windows portable packaging workflow",
+          "state": "open",
+          "updated_at": "2026-10-19T05:07:25Z",
+          "html_url": "https://github.com/xinntao/Real-ESRGAN/pull/1017"
+        },
+        {
+          "number": 1016,
+          "title": "License confirmation: commercial SaaS use and browser-side redistribution of realesr-general-x4v3.pth",
+          "state": "open",
+          "updated_at": "2026-10-18T05:41:23Z",
+          "html_url": "https://github.com/xinntao/Real-ESRGAN/issues/1016"
+        },
+        {
+          "number": 1015,
+          "title": "Commercial use of the pretrained weights (realesr-general-x4v3) and its training data?",
+          "state": "open",
+          "updated_at": "2026-10-14T08:49:58Z",
+          "html_url": "https://github.com/xinntao/Real-ESRGAN/issues/1015"
+        }
+      ],
+      "pull_requests": [
+        {
+          "number": 1017,
+          "title": "Add Windows portable packaging workflow",
+          "state": "open",
+          "updated_at": "2026-10-19T05:07:25Z",
+          "html_url": "https://github.com/xinntao/Real-ESRGAN/pull/1017"
+        },
+        {
+          "number": 1013,
+          "title": "fix: preserve uint16 range for dark input images",
+          "state": "open",
+          "updated_at": "2026-09-27T21:03:00Z",
+          "html_url": "https://github.com/xinntao/Real-ESRGAN/pull/1013"
+        },
+        {
+          "number": 1010,
+          "title": "improve pipeline parallelism",
+          "state": "open",
+          "updated_at": "2026-08-14T06:22:26Z",
+          "html_url": "https://github.com/xinntao/Real-ESRGAN/pull/1010"
+        }
+      ],
+      "last_commit_date": "2024-04-02T16:39:11Z"
+    },
+    {
+      "repository": "xinntao/Real-ESRGAN-ncnn-vulkan",
+      "url": "https://github.com/xinntao/Real-ESRGAN-ncnn-vulkan",
+      "stargazers_count": 2269,
+      "forks_count": 303,
+      "pushed_at": "2024-05-10T11:34:40Z",
+      "updated_at": "2026-10-21T05:42:53Z",
+      "open_issues_count": 67,
+      "archived": false,
+      "default_branch": "master",
+      "license": "NOASSERTION",
+      "sample_human_contributors": 2,
+      "sample_bot_contributors": 0,
+      "contributors_sample_size": 2,
+      "issues": [
+        {
+          "number": 82,
+          "title": "Refactor code structure for improved readability and maintainability",
+          "state": "open",
+          "updated_at": "2026-02-20T10:02:27Z",
+          "html_url": "https://github.com/xinntao/Real-ESRGAN-ncnn-vulkan/pull/82"
+        },
+        {
+          "number": 81,
+          "title": "[BUG] Filename character û is displayed as ¹ in logging output",
+          "state": "open",
+          "updated_at": "2026-01-12T20:46:14Z",
+          "html_url": "https://github.com/xinntao/Real-ESRGAN-ncnn-vulkan/issues/81"
+        },
+        {
+          "number": 80,
+          "title": "The image output is completely black or incorrect",
+          "state": "open",
+          "updated_at": "2025-12-24T07:16:27Z",
+          "html_url": "https://github.com/xinntao/Real-ESRGAN-ncnn-vulkan/issues/80"
+        }
+      ],
+      "pull_requests": [
+        {
+          "number": 82,
+          "title": "Refactor code structure for improved readability and maintainability",
+          "state": "open",
+          "updated_at": "2026-02-20T10:02:27Z",
+          "html_url": "https://github.com/xinntao/Real-ESRGAN-ncnn-vulkan/pull/82"
+        },
+        {
+          "number": 64,
+          "title": "Remove WebP support",
+          "state": "closed",
+          "updated_at": "2024-05-10T11:37:04Z",
+          "html_url": "https://github.com/xinntao/Real-ESRGAN-ncnn-vulkan/pull/64"
+        },
+        {
+          "number": 56,
+          "title": "Add resize output option",
+          "state": "open",
+          "updated_at": "2024-04-22T13:28:30Z",
+          "html_url": "https://github.com/xinntao/Real-ESRGAN-ncnn-vulkan/pull/56"
+        }
+      ],
+      "last_commit_date": "2022-04-24T08:46:32Z"
+    },
+    {
+      "repository": "Agamnentzar/ag-psd",
+      "url": "https://github.com/Agamnentzar/ag-psd",
+      "stargazers_count": 731,
+      "forks_count": 93,
+      "pushed_at": "2026-10-07T19:10:44Z",
+      "updated_at": "2026-10-19T12:46:57Z",
+      "open_issues_count": 54,
+      "archived": false,
+      "default_branch": "master",
+      "license": "NOASSERTION",
+      "sample_human_contributors": 10,
+      "sample_bot_contributors": 0,
+      "contributors_sample_size": 10,
+      "issues": [
+        {
+          "number": 273,
+          "title": "Rust rewrite (i know... i know...)",
+          "state": "open",
+          "updated_at": "2026-10-21T11:28:58Z",
+          "html_url": "https://github.com/Agamnentzar/ag-psd/issues/273"
+        },
+        {
+          "number": 272,
+          "title": "textPath is No Longer Read if using a psd File from a New Version of Photoshop",
+          "state": "closed",
+          "updated_at": "2026-10-07T19:36:47Z",
+          "html_url": "https://github.com/Agamnentzar/ag-psd/issues/272"
+        },
+        {
+          "number": 271,
+          "title": "31.0.0 regression: eager isValidBoxSize aborts documents that 28.5.1 read fine",
+          "state": "closed",
+          "updated_at": "2026-08-21T17:00:20Z",
+          "html_url": "https://github.com/Agamnentzar/ag-psd/issues/271"
+        }
+      ],
+      "pull_requests": [
+        {
+          "number": 269,
+          "title": "Accept long-form enum values in descriptor decode (fixes Photoshop 2026 layer effects)",
+          "state": "closed",
+          "updated_at": "2026-06-22T21:03:55Z",
+          "html_url": "https://github.com/Agamnentzar/ag-psd/pull/269"
+        },
+        {
+          "number": 267,
+          "title": "feat: read and write document-level pattern (Patt) blocks",
+          "state": "closed",
+          "updated_at": "2026-06-17T14:35:51Z",
+          "html_url": "https://github.com/Agamnentzar/ag-psd/pull/267"
+        },
+        {
+          "number": 264,
+          "title": "fix: byte-swap 16-bit channel data from big-endian to native endian",
+          "state": "closed",
+          "updated_at": "2026-04-10T23:55:26Z",
+          "html_url": "https://github.com/Agamnentzar/ag-psd/pull/264"
+        }
+      ],
+      "last_commit_date": "2026-10-07T19:07:13Z"
+    },
+    {
+      "repository": "Brooooooklyn/canvas",
+      "url": "https://github.com/Brooooooklyn/canvas",
+      "stargazers_count": 2342,
+      "forks_count": 100,
+      "pushed_at": "2026-10-21T10:10:23Z",
+      "updated_at": "2026-10-21T10:12:44Z",
+      "open_issues_count": 86,
+      "archived": false,
+      "default_branch": "main",
+      "license": "NOASSERTION",
+      "sample_human_contributors": 27,
+      "sample_bot_contributors": 3,
+      "contributors_sample_size": 30,
+      "issues": [
+        {
+          "number": 1399,
+          "title": "chore(deps): update dependency electron to v45",
+          "state": "open",
+          "updated_at": "2026-10-21T10:10:18Z",
+          "html_url": "https://github.com/Brooooooklyn/canvas/pull/1399"
+        },
+        {
+          "number": 1398,
+          "title": "chore(deps): group @oxc-node packages in renovate config",
+          "state": "closed",
+          "updated_at": "2026-10-21T08:02:10Z",
+          "html_url": "https://github.com/Brooooooklyn/canvas/pull/1398"
+        },
+        {
+          "number": 1397,
+          "title": "chore(deps): update dependency @oxc-node/core to v1",
+          "state": "closed",
+          "updated_at": "2026-10-21T10:10:23Z",
+          "html_url": "https://github.com/Brooooooklyn/canvas/pull/1397"
+        }
+      ],
+      "pull_requests": [
+        {
+          "number": 1399,
+          "title": "chore(deps): update dependency electron to v45",
+          "state": "open",
+          "updated_at": "2026-10-21T10:10:18Z",
+          "html_url": "https://github.com/Brooooooklyn/canvas/pull/1399"
+        },
+        {
+          "number": 1398,
+          "title": "chore(deps): group @oxc-node packages in renovate config",
+          "state": "closed",
+          "updated_at": "2026-10-21T08:02:10Z",
+          "html_url": "https://github.com/Brooooooklyn/canvas/pull/1398"
+        },
+        {
+          "number": 1397,
+          "title": "chore(deps): update dependency @oxc-node/core to v1",
+          "state": "closed",
+          "updated_at": "2026-10-21T10:10:23Z",
+          "html_url": "https://github.com/Brooooooklyn/canvas/pull/1397"
+        }
+      ],
+      "last_commit_error": "HTTP Error 403: rate limit exceeded"
+    },
+    {
+      "repository": "google/fonts",
+      "url": "https://github.com/google/fonts",
+      "stargazers_count": 20659,
+      "forks_count": 2934,
+      "pushed_at": "2026-10-21T00:58:33Z",
+      "updated_at": "2026-10-21T12:39:21Z",
+      "open_issues_count": 1450,
+      "archived": false,
+      "default_branch": "main",
+      "license": null,
+      "sample_human_contributors": 29,
+      "sample_bot_contributors": 1,
+      "contributors_sample_size": 30,
+      "issues": [
+        {
+          "number": 11146,
+          "title": "Triage test",
+          "state": "closed",
+          "updated_at": "2026-10-21T07:57:18Z",
+          "html_url": "https://github.com/google/fonts/issues/11146"
+        },
+        {
+          "number": 11145,
+          "title": "Add Allele Mono",
+          "state": "open",
+          "updated_at": "2026-10-20T21:53:45Z",
+          "html_url": "https://github.com/google/fonts/issues/11145"
+        },
+        {
+          "number": 11144,
+          "title": "Add Primavera",
+          "state": "open",
+          "updated_at": "2026-10-21T12:13:58Z",
+          "html_url": "https://github.com/google/fonts/issues/11144"
+        }
+      ],
+      "pull_requests": [
+        {
+          "number": 11131,
+          "title": "Gemini-based auto triage agent",
+          "state": "closed",
+          "updated_at": "2026-10-16T12:29:32Z",
+          "html_url": "https://github.com/google/fonts/pull/11131"
+        },
+        {
+          "number": 11126,
+          "title": "Leon Sans: Version 2.000 added",
+          "state": "closed",
+          "updated_at": "2026-10-16T08:40:10Z",
+          "html_url": "https://github.com/google/fonts/pull/11126"
+        },
+        {
+          "number": 11125,
+          "title": "Remove the issue triage bot for now...",
+          "state": "closed",
+          "updated_at": "2026-10-15T18:11:08Z",
+          "html_url": "https://github.com/google/fonts/pull/11125"
+        }
+      ],
+      "last_commit_error": "HTTP Error 403: rate limit exceeded"
+    }
+  ]
+}

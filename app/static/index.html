@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>分层工坊 · 图片转可编辑 PSD</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#workspace">跳到工作区</a>
+  <div class="paper-grain" aria-hidden="true"></div>
+
+  <header class="masthead">
+    <a class="brand" href="/" aria-label="分层工坊首页">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>
+        <strong>分层工坊</strong>
+        <small>LOCAL LAYER STUDIO</small>
+      </span>
+    </a>
+    <div class="header-actions">
+      <span class="local-badge">开源本机版 0.3.5-oss.1</span>
+      <div class="health" id="health" role="status" aria-live="polite">
+        <span class="health-dot"></span>
+        <span id="healthText">正在检查本机服务…</span>
+        <button class="text-button is-hidden" id="healthRetry" type="button">重试</button>
+      </div>
+      <button class="shutdown-button" id="shutdownButton" type="button">退出软件</button>
+    </div>
+  </header>
+
+  <main class="workspace" id="workspace">
+    <aside class="control-panel" aria-labelledby="createTitle">
+      <div class="section-kicker"><span>01</span> 新建任务</div>
+      <h1 id="createTitle">把图片拆成<br><em>可以继续编辑</em>的图层</h1>
+      <p class="intro">图片只在这台电脑上处理。一次可加入多张，完成后下载 PSD、预览与重建说明。</p>
+      <p class="rebuild-note"><span aria-hidden="true">※</span> 复杂元素可能合并或重建，结果会如实列在说明中。</p>
+
+      <form id="uploadForm" novalidate>
+        <div class="drop-zone" id="dropZone" tabindex="0" role="button" aria-controls="fileInput" aria-describedby="dropHint">
+          <input id="fileInput" name="files" type="file" accept=".png,.jpg,.jpeg,.webp,image/png,image/jpeg,image/webp" multiple hidden>
+          <span class="drop-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M13 8h17l6 6v26H13z"/><path d="M30 8v7h7M24 31V18m-5 5 5-5 5 5"/></svg>
+          </span>
+          <strong>拖入图片，或按回车选择</strong>
+          <span id="dropHint">PNG、JPG、WebP · 最多 10 张 · 单张不超过 20 MB</span>
+        </div>
+
+        <div class="selected-files is-hidden" id="selectedFiles" aria-label="已选择的图片"></div>
+
+        <fieldset class="settings">
+          <legend>处理设置</legend>
+          <div class="setting-row scale-setting">
+            <div>
+              <span class="setting-label">输出倍率</span>
+              <small>提高画布尺寸与细节</small>
+            </div>
+            <div class="segmented" aria-label="输出倍率">
+              <label><input type="radio" name="scale" value="2"><span>2×</span></label>
+              <label><input type="radio" name="scale" value="3" checked><span>3×</span></label>
+              <label><input type="radio" name="scale" value="4"><span>4×</span></label>
+            </div>
+          </div>
+          <label class="toggle-row">
+            <span><span class="setting-label">自动裁黑边</span><small>识别并移除界面边缘</small></span>
+            <input type="checkbox" name="crop_ui" checked>
+            <span class="toggle" aria-hidden="true"></span>
+          </label>
+          <label class="toggle-row">
+            <span><span class="setting-label">分离光影</span><small>生成可调透明度的近似光影层</small></span>
+            <input type="checkbox" name="split_light" checked>
+            <span class="toggle" aria-hidden="true"></span>
+          </label>
+        </fieldset>
+
+        <p class="form-message" id="formMessage" role="alert"></p>
+        <button class="primary-button" id="submitButton" type="submit" disabled>
+          <span>开始分层</span><span class="arrow" aria-hidden="true">↗</span>
+        </button>
+      </form>
+
+      <p class="privacy-note"><span aria-hidden="true">⌂</span> 文件不会上传到云端 · 每批不超过 80 MB</p>
+    </aside>
+
+    <section class="job-area" aria-labelledby="jobsTitle">
+      <div class="job-heading">
+        <div>
+          <div class="section-kicker"><span>02</span> 任务与结果</div>
+          <h2 id="jobsTitle">制作台</h2>
+        </div>
+        <button class="icon-button" id="refreshJobs" type="button" aria-label="刷新任务" title="刷新任务">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6v5h-5M4 18v-5h5M6.1 9a7 7 0 0 1 11.8-2.2L20 9M4 15l2.1 2.2A7 7 0 0 0 18 15"/></svg>
+        </button>
+      </div>
+
+      <div class="job-layout">
+        <nav class="job-list-panel" aria-label="任务列表">
+          <div class="list-caption"><span>最近任务</span><span id="jobCount">—</span></div>
+          <div class="job-list" id="jobList">
+            <div class="empty-state compact"><span></span><p>正在读取任务…</p></div>
+          </div>
+        </nav>
+
+        <article class="result-panel" id="resultPanel" aria-live="polite">
+          <div class="empty-state result-empty">
+            <div class="empty-art" aria-hidden="true"><span></span><span></span><span></span></div>
+            <p>选择一项任务</p>
+            <small>处理状态、预览和可编辑图层会出现在这里</small>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div class="sr-only" id="liveStatus" aria-live="polite" aria-atomic="true"></div>
+  <script src="/static/app.js" defer></script>
+</body>
+</html>

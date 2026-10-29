@@ -1,0 +1,68 @@
+# 分层工坊 · LayerStudio
+
+**在本机将商品图、海报等扁平图片转换为可继续编辑的分层 PSD。**
+
+上传 JPG、PNG 或 WebP → 识别文字、分离主体、重建部分背景 → 下载 PSD → 在 Photoshop 中修改文字、描边、主体位置和光效。
+
+本项目是基于原 0.3.5 图片处理功能整理的独立本机开源版，版本 `0.3.5-oss.1`，不需要激活码、授权服务器或 AI API Key。界面在浏览器中打开，处理在当前电脑上完成。安装依赖和获取模型需要网络；模型准备完成后，正常图片处理不需要外部服务。
+
+## 能做什么
+
+- 批量处理图片，每批最多 10 张、单张 20 MB、整批 80 MB。
+- 多尺度文字识别；可靠匹配的文字生成原生可编辑文字层。
+- 对特殊字形保留原貌图层，并提供默认隐藏的近似文字替代层。
+- 分离显著主体和近似亮部；尝试重建适合处理的简单装饰。
+- 本地超分辨率增强，输出长边最多 4096 像素。
+- 导出 PSD、预览和包含处理说明的完整包。
+
+## 先了解限制
+
+这是**分层重建**，不会恢复原设计文件，也不保证任意图片都能完整自动分层。
+
+复杂文字可能仍是像素层；保真原区域可能包含背景，需要精修。被遮挡的背景、字体、描边和光影可能近似重建；超分辨率细节属于估算。相连商品可能合并，OCR 可能遗漏或识别错误。像素层不会自动变成矢量。当前代码仍保留一处历史特定字标的轮廓修正，不能作为通用 Logo 修复能力。
+
+本版本的文字和描边修改主要在导出的 PSD 中进行，浏览器页面用于上传、处理、预览和下载。请使用有权处理的图片，并在实际交付前检查结果。
+
+## Windows 部署
+
+当前支持范围为 Windows 10/11 64 位、Python 3.12 和 Node.js。Real-ESRGAN 的本机增强程序需要可用的 Vulkan 驱动；其他系统及显卡组合未验证。
+
+在项目根目录依次运行（不需要管理员权限，也无需更改 PowerShell 执行策略）：
+
+```powershell
+py -3.12 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install --index-url https://pypi.org/simple -r requirements.txt
+npm ci --ignore-scripts --registry=https://registry.npmjs.org
+```
+
+接着按 [模型准备说明](docs/MODELS.md) 放置模型和必要运行文件。**源码包不包含模型、Real-ESRGAN 可执行文件、运行环境或个人图片。只安装上述依赖还不能完成图片处理。**
+
+启动：
+
+```powershell
+.\.venv\Scripts\python.exe app\launcher.py
+```
+
+程序会打开本机浏览器，默认从 `http://127.0.0.1:8765` 开始选择端口。上传图片后下载 PSD，用 Photoshop 打开。若提示缺少字体，可自行安装交付包 `fonts` 目录中的 OFL 字体。导出过程不会自动安装字体或改写字体注册表。
+
+## 开发与测试
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install --index-url https://pypi.org/simple -r requirements-dev.txt
+.\.venv\Scripts\python.exe -m pytest -q
+npm test
+```
+
+公开测试使用合成素材，不要求模型权重；部分字体测试使用 Windows 自带字体。完整推理仍需另行验证模型、显卡与真实图片效果。检查范围见 [开源整理记录](docs/RELEASE_REVIEW.md)。
+
+## 数据与运行范围
+
+默认处理记录在 `app/data/jobs`，启动日志在 `app/data/software.log`。程序不会自动清理历史结果，关闭软件后可自行备份或整理。`LAYERSTUDIO_DATA` 可指定任务目录，`LAYERSTUDIO_PORT` 可指定起始端口，`LAYERSTUDIO_GPU` 可指定 Real-ESRGAN 的 GPU 编号，`LAYERSTUDIO_NO_BROWSER=1` 可关闭自动打开浏览器。
+
+服务只监听本机。当前版本没有为公网多用户部署设计账号、隔离和资源配额，不应直接绑定公网地址开放上传。
+
+## 参与和许可
+
+欢迎提交可复现的问题、文档改进和修复，见 [贡献说明](CONTRIBUTING.md)。请勿在 Issue 中上传客户素材、激活信息或密钥。
+
+应用原创源码采用 **GPL-3.0-only**，完整条款见 [LICENSE](LICENSE)。允许商用；分发覆盖的修改版时，需要按 GPLv3 提供对应源码及相关声明。普通图片处理结果不会仅因使用本工具就自动适用 GPL。第三方库、字体和模型遵循各自许可，详见 [第三方说明](THIRD_PARTY_NOTICES.md)。
